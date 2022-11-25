@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Comic Neue';
+    src:
+      local("Comic Neue"),
+      url("./assets/fonts/comic-neue/ComicNeue-Regular.ttf") format("truetype");
+  }
+
+body{
+    font-family:'Comic Neue';
+    width: 1440px;
+    margin: 0px;
+}
+
+header{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list-item{
+    list-style: none;
+}
