@@ -1,35 +1,44 @@
 @font-face {
     font-family: 'Comic Neue';
+    font-weight: normal;
     src:
       local("Comic Neue"),
       url("./assets/fonts/comic-neue/ComicNeue-Regular.ttf") format("truetype");
   }
 
+@font-face {
+    font-family: 'Comic Neue';
+    font-weight: bold;
+    src:
+      local("Comic Neue"),
+      url("./assets/fonts/comic-neue/ComicNeue-Bold.ttf") format("truetype");
+  }
+
 body{
     font-family:'Comic Neue';
     width: 1440px;
-    margin: 0px;
+    margin: 0px auto;
 }
 
+/* HEADER */
+
 header{
+    font-family:'Comic Neue';
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 7px 140px;
 }
 
 .menu-logo-container{
-
-}
-
-.menu-logo-container img{
-    width: 30px;
+    width: 36px;
 }
 
 .menu-list{
     list-style: none;
     display: flex;
     justify-content: space-between;
-    width: 900px;
+    width: 970px;
 }
 
 .menu-list-item{
@@ -38,9 +47,10 @@ header{
 }
 
 .menu-list-item a{
-    text-decoration: none;
-    font-size: 18px;
+    font-family: 'Comic Neue';
     font-weight: bold;
+    text-decoration: none;
+    font-size: 23px;
     color: black;
     margin: 0px 50px;
 }
@@ -51,13 +61,297 @@ header{
     border: none;
     color: #FFFFFF;
     background-color: #80B1FF;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     padding: 2px 15px;
     box-shadow: 0px 3px #6d96d8;
-    margin-left: 80px;
+    margin: 0px 0px;
+}
+
+/* MAIN */
+
+/* Banner */
+
+.banner{
+    position: relative;
+    background-color:#80B1FF;
 }
 
 .banner-video{
-    width: 1440px;;
+    width: 1440px;
+}
+
+.banner-video-title{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 54px;
+    left: 532px;
+}
+
+.banner-video-title-img-top{
+    width: 400px;
+}
+
+.banner-video-title-img-bot{
+    width: 150px;
+}
+
+.banner-video-button{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    bottom: 120px;
+    left: 610px;
+    font-family: 'Comic Neue';
+    border-radius: 8px;
+    border: none;
+    color: #6d96d8;
+    background-color: #FFFFFF;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 12px 60px;
+    box-shadow: 0px 4px #6d96d8;
+    border: 3px solid #6d96d8;
+    margin: 0px 0px;
+}
+
+/* Newsletter */
+
+.newsletter{
+    background-color:#80B1FF;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 28px 0px;
+}
+
+.newsletter-text-top{
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 0px #5086DC;
+    margin: 0px;
+}
+
+.newsletter-text-bottom{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.newsletter-right-input{
+    box-shadow: 0px 4px #6d96d8;
+    border: 1px solid #bcbcbc;
+    font-family: 'Comic Neue';
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 180px;
+    height: 27px;
+    padding: 5px 20px 5px 15px;
+}
+
+.newsletter-right-button{
+    font-family: 'Comic Neue';
+    border-radius: 8px;
+    border: none;
+    color: #5482cc;
+    background-color: #FFFFFF;
+    font-size: 19px;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+    box-shadow: 0px 4px #6d96d8;
+    border: 2px solid #6d96d8;
+    margin: 0px 0px;
+}
+
+/* DETAILS*/
+
+.details{
+    background-color: #99E2FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Details top */
+
+.details-top{
+    align-items: center;
+    display: flex;
+    width: 1000px;
+    padding: 100px 0px 100px 0px;
+}
+.details-top-img{
+    width: 450px;
+}
+
+.details-top-img img{
+    height: 680px;
+    margin: 0px auto;
+}
+
+.details-top-text-title{
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 0px 2px #5086DC;
+    margin: 0px;
+}
+
+.details-top-text-description{
+    color: #313A71;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Details mid */
+
+.details-mid{
+    align-items: center;
+    display: flex;
+    width: 1000px;
+    position: relative;
+    margin: 0px 0px 100px 0px;
+}
+
+.details-mid-background{
+    
+}
+
+.details-mid-background-text{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    width: 400px;
+}
+
+.details-mid-background-text-title{
+    width: 400px;
+}
+
+.details-mid-background-text-description{
+    width: 400px;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.details-mid-background-text-container{
+    text-align: center;
+    width: 220px;
+}
+
+.details-mid-background-text-button{
+    font-family: 'Comic Neue';
+    border-radius: 7px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #80B1FF;
+    font-size: 22px;
+    font-weight: 600;
+    box-shadow: 0px 3px #6d96d8;
+    width: 220px;
+    height: 40px;
+    margin: 0px 0px 20px 0px;
+}
+
+.details-mid-background-text-learn{
+    width: 400px;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0px 2px #000000;
+}
+
+.details-mid-background img{
+    width: 1000px;
+    border-radius: 25px;
+}
+
+.details-mid-background-gif{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.details-mid-background-gif img{
+    position: absolute;
+    width: 450px;
+    left: 550px;
+}
+
+/* Details bot */
+
+.details-bot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details-bot-title{
+    
+}
+
+.details-bot-title img{
+    width: 300px;
+}
+
+.details-bot-articles{
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 40px;
+    margin-bottom: 25px;
+}
+
+.details-bot-article{
+    background-color: #FFFFFF;
+    width: 300px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-bot-article-img img{
+    width: 300px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.details-bot-article-title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #313A71;
+    padding: 10px 20px;
+}
+
+.details-bot-article-reference{
+    padding: 0px 20px 0px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #8f8f8f;
+}
+
+/* FOOTER */
+
+footer{
+    padding: 40px;
+    background-color: #FFA4D4;
+    color: #fe72c1;
+    font-weight: bold;
+}
+
+.footer-img img{
+    width: 100px;
 }

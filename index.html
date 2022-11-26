@@ -10,9 +10,7 @@
 <body>
     <!-- HEADER -->
     <header>
-        <div class="menu-logo-container">
-            <img src="./assets/img/logo_doodles.png" alt="Logo Doodles">
-        </div>
+        <img class="menu-logo-container" src="./assets/img/logo_doodles.png" alt="Logo Doodles">
         <nav class="menu">
             <ul class="menu-list">
                 <li class="menu-list-item">
@@ -32,22 +30,18 @@
                 </li>
             </ul>
         </nav>
-        <div>
-            <button class="menu-button-connect">connect</button>
-        </div>
+        <button class="menu-button-connect">connect</button>
     </header>
     <!-- MAIN -->
     <main>
         <section class="banner">
+            <video class="banner-video" src="./assets/img/video.mp4" muted loop></video>
+            <div class="banner-video-title">
+                <img class="banner-video-title-img-top" src="./assets/img/doodles2-logo.png" alt="Doodles 2">
+                <img class="banner-video-title-img-bot" src="./assets/img/text_coming-soon.png" alt="Coming soon">
+            </div>    
             <div>
-                <video class="banner-video" src="./assets/img/video.mp4"></video>
-                <div class="banner-video-title">
-                    <img src="./assets/img/doodles2-logo.png" alt="Doodles 2">
-                    <img src="./assets/img/text_coming-soon.png" alt="Coming soon">
-                </div>    
-                <div>
-                    <button class="banner-video-button">watch trailer</button>
-                </div>
+                <button class="banner-video-button">watch trailer</button>
             </div>
         </section>
         <section class="newsletter">
@@ -60,7 +54,7 @@
                 <button class="newsletter-right-button">sign up</button>
             </div>
         </section>
-        <section>
+        <section class="details">
             <!-- Details top -->
             <div class="details-top">
                 <div class="details-top-img">
@@ -79,8 +73,11 @@
                 <div class="details-mid-background-text">
                     <img class="details-mid-background-text-title" src="./assets/img/text_genbox-promo.png" alt="Title Genesis Box">
                     <p class="details-mid-background-text-description">Genesis boxes contain a rare assortment of apparel and accessories you can use on day one of Doodles 2.</p>
-                    <button class="details-mid-background-text-button">buy at opensea</button>
-                    <a class="details-mid-background-text-learn" href="#">learn more</a>
+                    <div class="details-mid-background-text-container">
+                        <button class="details-mid-background-text-button">buy at opensea</button>
+                        <a class="details-mid-background-text-learn" href="#">learn more</a>
+                    </div>    
+                        
                 </div>
                 <div class="details-mid-background-gif">
                     <img src="./assets/img/genbox.gif" alt="Genbox">
